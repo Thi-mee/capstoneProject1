@@ -1,0 +1,58 @@
+
+:root{
+  --dark-blue: hsl(218, 28%, 13%);/* (main background)*/
+
+
+
+  /* Accent */
+  --cyan: hsl(176, 68%, 64%);   /*(inside call-to-action gradient)*/
+  --blue: hsl(198, 60%, 50%);   /*(inside call-to-action gradient)*/
+  --light-red: hsl(0, 100%, 63%);/*(error)*/
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%); 
+  --white-text: hsla(0, 0%, 100%, 0.767); 
+
+}
+
+
+body{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1em .5em;
+  min-height: 100vh;
+  font-size: 14px;
+  text-align: center;
+}
+p{
+  color: var(--white-text);
+}
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.nav__links{
+  display: flex;
+  gap: .5em;
+  font-size: .8rem;
+}
+header{
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+}
+header h1{
+  font-size: 1.5rem;
+}
+
+header .cta-button{
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  width: 80%;
+  padding: .8rem;
+  border-radius: 2em;
+  margin: 0 auto;
+}

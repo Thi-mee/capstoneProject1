@@ -1,0 +1,25 @@
+*,
+*::before,
+*:after{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  padding: .75em;
+}
+ul{
+  list-style: none;
+  margin: 0;
+}
+li{
+  margin: 0;
+}

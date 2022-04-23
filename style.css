@@ -1,5 +1,8 @@
 :root {
 	--dark-blue: hsl(218, 28%, 13%); /* (main background)*/
+  --darke-blue: hsl(217, 28%, 15%);
+	--cards-bg: hsl(219, 30%, 18%);
+  --footer-bg: hsl(216, 53%, 9%);
 
 	/* Accent */
 	--cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
@@ -21,6 +24,11 @@ body {
 }
 p {
 	color: var(--white-text);
+}
+.cta-button{
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  font-weight: bold;
+  border: none;
 }
 .container {
 	width: 95%;
@@ -50,4 +58,87 @@ header .cta-button {
 	padding: 0.8rem;
 	border-radius: 2em;
 	margin: 0 auto;
+}
+
+.testimonials{
+  padding: 2rem;
+  font-size: .65rem;
+  position: relative;
+}
+.testimonials img{
+  width: 30px;
+}
+.quote-image{
+  position: absolute;
+  left: 2.3rem;
+  top: calc(2.4rem - 30px);
+}
+.cards {
+  display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+.card {
+  padding: 1em 2em;
+	background-color: var(--cards-bg);
+  text-align: left;
+  border-radius: .5em;
+}
+.flex-div{
+  display: flex;
+  padding: 0;
+  gap: 1em;
+}
+.flex-div *{
+  margin: 0;
+}
+.card img{
+  border-radius: 50%;
+}
+
+.get-started-card{
+  background-color: var(--darke-blue);
+  padding: 1.5em 2.1em;
+  margin: .3em;
+  border-radius: .8em;
+  box-shadow: 4px 4px 8px 1px hsla(0, 0%, 0%, 0.4);
+}
+
+.simple-form{
+  margin: 2em 0 1em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+input{
+  border-radius: 2em;
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+input::placeholder{
+  color: rgb(126, 126, 126);
+}
+
+.simple-form .cta-button{
+  border-radius: 2em;
+  padding: 1rem;
+  background-color: var();
+  color: white;
+  font-weight: bold;
+}
+
+
+footer{
+  position: relative;
+  min-height: 60vh;
+  border: 1px solid red;
+}
+footer::before{
+  content: "";
+  position: absolute;
+  background-color: var(--footer-bg);
+  inset: 0;
+  margin: -12em -1.6em -4em -1.6em;
+  z-index: -1;
 }

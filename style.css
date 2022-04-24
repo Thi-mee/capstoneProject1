@@ -142,3 +142,9 @@ footer::before{
   margin: -12em -1.6em -4em -1.6em;
   z-index: -1;
 }
+
+.whitespace{
+  padding: 50px 0 20px 0;
+  font-size: .65rem;
+  position: relative;
+}

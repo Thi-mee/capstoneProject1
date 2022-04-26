@@ -61,12 +61,22 @@ p {
 nav {
 	display: flex;
 	justify-content: space-between;
+  align-items: center;
+}
+nav .logo{
+  font-size: 1.2rem;
+}
+nav .logo h1{
+  margin: .3em;
 }
 .nav__links {
 	display: flex;
 	gap: 0.5em;
 	font-size: 0.8rem;
   color: var(--white-text);
+}
+.nav__link:hover{
+  background-color: hsla(0, 0%, 0%, 0.2);
 }
 .main-img{
   width: 95%;
@@ -174,7 +184,7 @@ input::placeholder{
 footer{
   position: relative;
   min-height: 60vh;
-
+  font-size: 1.1rem;
 }
 footer::before{
   content: "";
@@ -184,7 +194,53 @@ footer::before{
   margin: -12em -1.6em -4em -1.6em;
   z-index: -1;
 }
-
+.large{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.mydetails{
+  margin-top: 2em;
+  margin-bottom: 4em;
+  flex-direction: column;
+  display: flex;
+  gap: 1em;
+  text-align: left;
+  padding: 0 .8em;
+}
+footer p{
+  margin: 0;
+}
+.icon-and-ref{
+  display: flex;
+  gap: 1em;
+  align-items: flex-start;
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1em;
+}
+.footer-links a {
+  padding: 0;
+}
+.gap{
+  height: 1em;
+}
+.icon-links{
+  width: 40%;
+  margin: 4em auto 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.icon-links a{
+  width: 35px;
+  height: 35px;
+  padding-top: .2em;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 50%;
+}
 .whitespace{
   padding: 35px 0 20px 0;
   font-size: .65rem;
